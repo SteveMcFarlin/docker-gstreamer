@@ -29,10 +29,10 @@ docker build -t $TAG_BASENAME-dev-dependencies -f Dockerfile-dev-dependencies .
 docker_build dev-downloaded
 
 # Build dev image with source code included
-docker_build latest-dev-with-source
+# docker_build latest-dev-with-source
 
 # Build dev image with just binaries
-docker_build latest-dev
+# docker_build latest-dev
 
 # Build base production image with necessary dependencies
 docker_build prod-base
@@ -41,4 +41,4 @@ docker_build prod-base
 docker_build latest-prod
 
 # Build production image optimized binaries and debug symbols
-docker_build latest-prod-dbg
+# docker_build latest-prod-dbg

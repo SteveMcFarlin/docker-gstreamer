@@ -127,7 +127,37 @@ apt-get install -y --no-install-recommends \
   libavutil-dev \
   libva-dev \
   libudev-dev \
-  glibc-tools
+  glibc-tools \
+  libsoup-3.0-dev \
+  libwayland-client0 \
+  libwayland-egl1 \
+  libwayland-server0 \
+  libepoxy0 \
+  xdg-dbus-proxy \
+  libwoff1 \
+  libwebp7 \
+  libglib2.0-dev \
+  libegl1-mesa-dev \
+  libxkbcommon-dev \
+  libcairo2 \
+  libepoxy0 \
+  libfontconfig1 \
+  libfreetype6 \
+  g++ \
+  gcc \
+  libatk-bridge2.0-dev \
+  libcairo2-dev \
+  libgbm-dev \
+  libgnutls28-dev \
+  libharfbuzz-dev \
+  libicu-dev \
+  libwpebackend-fdo-1.0-dev \
+  libwpewebkit-1.0-dev \
+  libxml2-dev \
+  pkg-config \
+  wayland-protocols \
+  zlib1g-dev
+
 pip3 install meson ninja
 
 ARCH=$(dpkg --print-architecture)
@@ -158,3 +188,6 @@ if [[ $ARCH == "amd64" ]]; then
 fi
 
 wget -O- https://sh.rustup.rs | sh -s -- -y --default-toolchain stable
+
+source "$HOME/.cargo/env"
+cargo install cargo-c --features=vendored-openssl
