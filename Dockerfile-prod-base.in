@@ -157,6 +157,13 @@ RUN \
 COPY docker/install-arch-specific-dependencies.sh /.install-deps.sh
 RUN /.install-deps.sh
 
+# http://ftp.us.debian.org/debian/pool/main/w/wpebackend-fdo/libwpebackend-fdo-1.0-1_1.14.0-1_amd64.deb
+# http://ftp.us.debian.org/debian/pool/main/w/wpebackend-fdo/libwpebackend-fdo-1.0-dev_1.14.0-1_amd64.deb
+# http://ftp.us.debian.org/debian/pool/main/w/wpewebkit/libwpewebkit-1.1-dev_2.38.2-1+b1_amd64.deb
+# http://ftp.us.debian.org/debian/pool/main/w/wpewebkit/libwpewebkit-1.1-0_2.38.2-1+b1_amd64.deb
+# http://ftp.us.debian.org/debian/pool/main/libw/libwpe/libwpe-1.0-dev_1.14.0-1_amd64.deb
+# http://ftp.us.debian.org/debian/pool/main/libw/libwpe/libwpe-1.0-1_1.14.0-1_amd64.deb
+
 COPY deb /deb
 COPY install-deb.sh /install-deb.sh
 CMD ["/install-deb.sh"]
