@@ -1,4 +1,4 @@
-FROM restreamio/gstreamer:$TARGET_ARCH-dev-dependencies
+FROM streamyard/gstreamer:$TARGET_ARCH-dev-dependencies
 
 ARG GSTREAMER_REPOSITORY=https://gitlab.freedesktop.org/philn/gstreamer.git
 

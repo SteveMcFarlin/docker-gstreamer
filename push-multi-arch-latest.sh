@@ -3,7 +3,7 @@ set -e
 
 echo $DATE
 
-TAG_BASENAME="restreamio/gstreamer:$DATE"
+TAG_BASENAME="streamyard/gstreamer:$DATE"
 
 AMD64_TAG_BASENAME=$(cat /tmp/docker-gst-ci/workspace/docker-tag-basename-x86_64.txt)
 ARM64_TAG_BASENAME=$(cat /tmp/docker-gst-ci/workspace/docker-tag-basename-aarch64.txt)

@@ -4,7 +4,7 @@ set -e
 echo $DATE
 
 ARCH=$(uname -m)
-TAG_BASENAME="restreamio/gstreamer:$ARCH"
+TAG_BASENAME="streamyard/gstreamer:$ARCH"
 
 mkdir -p workspace
 echo "$TAG_BASENAME-$DATE" > workspace/docker-tag-basename-$ARCH.txt

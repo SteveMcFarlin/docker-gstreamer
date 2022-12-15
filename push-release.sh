@@ -6,7 +6,7 @@ if [[ (-z "$1") || (-z "$2") || (-z "$3") ]]; then
     exit 1
 fi
 
-TAG_BASENAME="restreamio/gstreamer:$1-$2"
+TAG_BASENAME="streamyard/gstreamer:$1-$2"
 
 docker push $TAG_BASENAME-dev-with-source
 docker tag $TAG_BASENAME-dev-with-source $TAG_BASENAME.$3-dev-with-source
